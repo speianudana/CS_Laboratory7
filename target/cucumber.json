@@ -1,0 +1,60 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-07T15:10:36.607Z",
+        "line": 3,
+        "name": "Website header exists",
+        "description": "",
+        "id": "google-search;website-header-exists",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11141794800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open google",
+            "match": {
+              "location": "steps.search.SearchSteps.openGooglePage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1520072700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Search computer",
+            "match": {
+              "location": "steps.search.SearchSteps.searchComputer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 188537500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Title should contain Google word",
+            "match": {
+              "location": "steps.search.SearchSteps.checkTitleContainsGoogle()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Google search",
+    "description": "",
+    "id": "google-search",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/GoogleSearch.feature",
+    "tags": []
+  }
+]
